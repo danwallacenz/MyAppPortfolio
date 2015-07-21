@@ -40,11 +40,51 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void spotifyStreamerButtonTap(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch the Spotify Streamer app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast.makeText(context, text, duration).show();
+    }
+
+    public void scoresAppButtonTap(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch the Scores app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast.makeText(context, text, duration).show();
+    }
+
+    public void libraryAppButtonTap(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch the Library app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast.makeText(context, text, duration).show();
+    }
+
+    public void buildItBiggerButtonTap(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch the Build it Bigger app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast.makeText(context, text, duration).show();
+    }
+
+    public void xyzReaderButtonTap(View view) {
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch the XYZ Reader app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast.makeText(context, text, duration).show();
+    }
+
     public void capstoneButtonTap(View view) {
-        Log.v("capstoneButtonTap",view.toString());
+//        Log.v("capstoneButtonTap",view.toString());
 
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my capstone app!";
+        CharSequence text = "This button will launch my Capstone app!";
         int duration = Toast.LENGTH_SHORT;
 
         Toast.makeText(context, text, duration).show();
