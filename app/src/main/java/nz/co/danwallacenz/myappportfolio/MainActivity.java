@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -94,6 +95,14 @@ public class MainActivity extends ActionBarActivity {
     private void showToast(View view, CharSequence text){
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_SHORT;
-        Toast.makeText(context, text, duration).show();
+        Toast toast = Toast.makeText(context, text, duration);
+
+        toast.setGravity(Gravity.TOP|Gravity.LEFT,view.getLeft(),view.getBottom());
+//        view.getBottom();
+//        view.getLeft();
+//        view.getY();
+
+        toast.show();
+
     }
 }
