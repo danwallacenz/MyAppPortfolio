@@ -42,67 +42,40 @@ public class MainActivity extends ActionBarActivity {
     }
 
     public void spotifyStreamerButtonTap(View view) {
-        Context context = getApplicationContext();
         CharSequence text = "This button will launch the Spotify Streamer app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
+        showToast(view, text);
     }
 
     public void scoresAppButtonTap(View view) {
-        Context context = getApplicationContext();
         CharSequence text = "This button will launch the Scores app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
+        showToast(view, text);
     }
 
     public void libraryAppButtonTap(View view) {
-        Context context = getApplicationContext();
         CharSequence text = "This button will launch the Library app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
+        showToast(view, text);
     }
 
     public void buildItBiggerButtonTap(View view) {
-        Context context = getApplicationContext();
         CharSequence text = "This button will launch the Build it Bigger app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
+        showToast(view, text);
     }
 
     public void xyzReaderButtonTap(View view) {
-        Context context = getApplicationContext();
         CharSequence text = "This button will launch the XYZ Reader app!";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast.makeText(context, text, duration).show();
+        showToast(view, text);
     }
 
     public void capstoneButtonTap(View view) {
-//        Log.v("capstoneButtonTap",view.toString());
         CharSequence text = "This button will launch my Capstone app!";
         showToast(view, text);
-//        Context context = getApplicationContext();
-//        CharSequence text = "This button will launch my Capstone app!";
-//        int duration = Toast.LENGTH_SHORT;
-//
-//        Toast.makeText(context, text, duration).show();
     }
 
     private void showToast(View view, CharSequence text){
         Context context = getApplicationContext();
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
-
         toast.setGravity(Gravity.TOP|Gravity.LEFT,view.getLeft(),view.getBottom());
-//        view.getBottom();
-//        view.getLeft();
-//        view.getY();
-
         toast.show();
-
     }
 }
