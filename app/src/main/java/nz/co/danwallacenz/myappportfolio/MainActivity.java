@@ -82,11 +82,18 @@ public class MainActivity extends ActionBarActivity {
 
     public void capstoneButtonTap(View view) {
 //        Log.v("capstoneButtonTap",view.toString());
-
-        Context context = getApplicationContext();
         CharSequence text = "This button will launch my Capstone app!";
-        int duration = Toast.LENGTH_SHORT;
+        showToast(view, text);
+//        Context context = getApplicationContext();
+//        CharSequence text = "This button will launch my Capstone app!";
+//        int duration = Toast.LENGTH_SHORT;
+//
+//        Toast.makeText(context, text, duration).show();
+    }
 
+    private void showToast(View view, CharSequence text){
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
         Toast.makeText(context, text, duration).show();
     }
 }
