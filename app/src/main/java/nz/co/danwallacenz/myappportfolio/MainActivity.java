@@ -1,11 +1,13 @@
 package nz.co.danwallacenz.myappportfolio;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -40,5 +42,11 @@ public class MainActivity extends ActionBarActivity {
 
     public void capstoneButtonTap(View view) {
         Log.v("capstoneButtonTap",view.toString());
+
+        Context context = getApplicationContext();
+        CharSequence text = "This button will launch my capstone app!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast.makeText(context, text, duration).show();
     }
 }
