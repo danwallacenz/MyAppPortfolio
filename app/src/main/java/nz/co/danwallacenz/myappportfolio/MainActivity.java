@@ -20,7 +20,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    
+
     public void spotifyStreamerButtonTap(View view) {
         CharSequence text = "This button will launch the Spotify Streamer app!";
         showToast(view, text);

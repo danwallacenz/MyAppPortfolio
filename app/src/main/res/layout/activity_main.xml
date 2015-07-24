@@ -93,7 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="My Nanodegree Apps!"
+        android:text="@string/menu_title"
         android:id="@+id/my_nanodegree_apps_textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
