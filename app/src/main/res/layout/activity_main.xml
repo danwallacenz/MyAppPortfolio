@@ -5,90 +5,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/spotify_streamer_button_title"
-        android:id="@+id/spotify_streamer_button"
-        android:layout_marginTop="48dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="spotifyStreamerButtonTap" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/scores_app_button_title"
-        android:id="@+id/scores_app_button"
-        android:layout_below="@+id/spotify_streamer_button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="scoresAppButtonTap" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/library_app_button_title"
-        android:id="@+id/library_app_button"
-        android:layout_below="@+id/scores_app_button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="libraryAppButtonTap" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/build_it_bigger_button_title"
-        android:id="@+id/build_it_bigger_button"
-        android:layout_below="@+id/library_app_button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="buildItBiggerButtonTap" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/xyz_reader_button_title"
-        android:id="@+id/xyz_reader_button"
-        android:layout_below="@+id/build_it_bigger_button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="@android:color/black"
-        android:backgroundTint="@android:color/holo_orange_dark"
-        android:onClick="xyzReaderButtonTap" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/capstone_button_title"
-        android:id="@+id/capstone_button"
-        android:layout_below="@+id/xyz_reader_button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:backgroundTint="@android:color/holo_red_dark"
-        android:onClick="capstoneButtonTap"
-        android:textColor="@android:color/white" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -97,5 +13,106 @@
         android:id="@+id/my_nanodegree_apps_textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spotify_streamer_button_title"
+                android:id="@+id/spotify_streamer_button"
+                android:layout_marginTop="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:onClick="spotifyStreamerButtonTap" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/scores_app_button_title"
+                android:id="@+id/scores_app_button"
+                android:layout_below="@+id/spotify_streamer_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:onClick="scoresAppButtonTap" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/library_app_button_title"
+                android:id="@+id/library_app_button"
+                android:layout_below="@+id/scores_app_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:onClick="libraryAppButtonTap" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/build_it_bigger_button_title"
+                android:id="@+id/build_it_bigger_button"
+                android:layout_below="@+id/library_app_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:onClick="buildItBiggerButtonTap" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/xyz_reader_button_title"
+                android:id="@+id/xyz_reader_button"
+                android:layout_below="@+id/build_it_bigger_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:onClick="xyzReaderButtonTap" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/capstone_button_title"
+                android:id="@+id/capstone_button"
+                android:layout_below="@+id/xyz_reader_button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:onClick="capstoneButtonTap"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
