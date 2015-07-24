@@ -13,6 +13,10 @@ import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
+    private Toast toast;
+//    int duration = Toast.LENGTH_SHORT;
+//    Context context = getApplicationContext();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,10 +76,13 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void showToast(View view, CharSequence text){
-        Context context = getApplicationContext();
+        if (toast != null) {
+            toast.cancel();
+        }
         int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.setGravity(Gravity.TOP|Gravity.LEFT,view.getLeft() + 10, view.getBottom());
+        Context context = getApplicationContext();
+        toast = Toast.makeText(context, text, duration);
+        toast.setGravity(Gravity.TOP|Gravity.LEFT, view.getLeft() + 10, view.getBottom());
         toast.show();
     }
 }
