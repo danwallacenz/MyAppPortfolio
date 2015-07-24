@@ -2,5 +2,10 @@
     <string name="app_name">My App Portfolio</string>
 
     <string name="menu_title">My Nanodegree Apps!</string>
-    <!--<string name="action_settings">Settings</string>-->
+    <string name="capstone_button_title">CAPSTONE: MY OWN APP</string>
+    <string name="xyz_reader_button_title">XYZ READER</string>
+    <string name="build_it_bigger_button_title">BUILD IT BIGGER</string>
+    <string name="library_app_button_title">LIBRARY APP</string>
+    <string name="scores_app_button_title">SCORES APP</string>
+    <string name="spotify_streamer_button_title">SPOTIFY STREAMER</string>
 </resources>
